@@ -1,0 +1,54 @@
+.wrapper {
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #374151;
+}
+
+.list {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 20px;
+  border: 2px solid #d1d5db;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+  gap: 4px;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  border-color: #1a56db;
+}
+
+.active {
+  border-color: #1a56db;
+  background: #eff6ff;
+}
+
+.num {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #111827;
+}
+
+.type {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.seats {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
