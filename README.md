@@ -1,16 +1,38 @@
-# React + Vite
+# 🚄 Railway Ticket Booking — WEB-project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Веб-застосунок для моделювання системи продажу залізничних квитків (аналог Укрзалізниці).  
+Реалізовано в рамках лабораторних робіт 9–10.
 
-Currently, two official plugins are available:
+## Технології
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React 18 + Vite
+- react-router-dom v6
+- react-toastify
+- CSS Modules
+- localStorage
 
-## React Compiler
+## Запуск проєкту
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+npm install
+npm run dev
 
-## Expanding the ESLint configuration
+## Функціонал
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Лабораторна робота 9
+- Перегляд списку рейсів у вигляді карток
+- Пошук за містом відправлення/прибуття або номером потяга
+
+### Лабораторна робота 10
+- Вибір вагону
+- Інтерактивна схема місць (вільні / обрані / заброньовані)
+- Форма бронювання з валідацією
+- Збереження бронювань у localStorage
+- Toast-сповіщення про результат
+
+## Структура проєкту
+
+src/
+├── components/   # UI компоненти
+├── data/         # Статичні дані про потяги
+├── pages/        # Сторінки (Home, Booking)
+└── services/     # Бізнес-логіка (BookingService)
